@@ -1,1 +1,1 @@
-to use the chatbot gui use "python main.py --gui" in cmd
+to use the chatbot gui use "python main.py --gui"
