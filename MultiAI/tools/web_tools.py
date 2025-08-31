@@ -1,15 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
-# --- THE DEFINITIVE FIX IS HERE ---
-from ddgs import DDGS # Changed from 'duckduckgo_search' to 'ddgs'
-# ----------------------------------
+from ddgs import DDGS
 import re
 
 def web_search(query: str) -> str:
     """Performs a web search using DuckDuckGo and returns the top 5 results."""
     print(f"> Searching the web for: '{query}'")
     try:
-        # This part of the code was already correct and works with the new library
+
         with DDGS() as ddgs:
             results = [r for r in ddgs.text(query, max_results=5)]
         if not results:
@@ -30,4 +28,5 @@ def scrape_webpage(url: str) -> str:
         clean_text = re.sub(r'\s{2,}', ' ', text).strip()
         return f"Content from '{url}' (first 4000 chars):\n{clean_text[:4000]}"
     except Exception as e:
+
         return f"Error scraping webpage '{url}': {e}"
