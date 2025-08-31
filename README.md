@@ -33,4 +33,5 @@ ollama pull phi3:medium-128k
 ### Minimum System Requirements
 
 **NVIDIA GeForce RTX 3070**
+and
 **32GB RAM**
