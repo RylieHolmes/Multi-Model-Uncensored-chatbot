@@ -27,3 +27,10 @@ ollama pull dolphin-llama3:8b
 ollama pull dolphin-mixtral
 ollama pull codstral
 ollama pull phi3:medium-128k
+```
+
+
+### Minimum System Requirements
+
+**NVIDIA GeForce RTX 3070**
+**32GB RAM**
