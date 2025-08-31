@@ -32,7 +32,7 @@ class CoreMemory:
             with open(self.filepath, 'x', encoding='utf-8') as f:
                 f.write("--- Journal of Gemini Local ---")
         except FileExistsError:
-            pass # File already exists, no action needed.
+            pass 
         except Exception as e:
             print(f"Error initializing core memory: {e}")
 
@@ -44,4 +44,5 @@ class CoreMemory:
                     f.write(f"{turn['role']}: {turn['content']}\n")
             return "Conversation history saved."
         except Exception as e:
+
             return f"Error saving conversation: {e}"
