@@ -36,4 +36,4 @@ ollama pull phi3:medium-128k
 and
 **32GB RAM**
 
-"this is my system and it works fine so thats what im basing it from so it could run on somthing less powerfull" 
+"This is my system and it works fine, so that's what I'm basing it from. So it could run on something less powerful."
