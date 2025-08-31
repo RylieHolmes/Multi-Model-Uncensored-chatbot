@@ -30,8 +30,10 @@ ollama pull phi3:medium-128k
 ```
 
 
-### Minimum System Requirements
+### System Requirements
 
 **NVIDIA GeForce RTX 3070**
 and
 **32GB RAM**
+
+"this is my system and it works fine so thats what im basing it from so it could run on somthing less powerfull" 
