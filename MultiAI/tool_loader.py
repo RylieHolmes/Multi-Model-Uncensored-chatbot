@@ -15,7 +15,6 @@ def load_tools_from_directory(directory='tools'):
             module = importlib.import_module(module_name)
             for name, func in inspect.getmembers(module, inspect.isfunction):
                 if not name.startswith('_'):
-                    # Get the function signature and docstring
                     signature = str(inspect.signature(func))
                     docstring = func.__doc__.strip() if func.__doc__ else "No description available."
                     
@@ -24,4 +23,5 @@ def load_tools_from_directory(directory='tools'):
                         'signature': signature,
                         'docstring': docstring
                     }
+
     return tool_functions
