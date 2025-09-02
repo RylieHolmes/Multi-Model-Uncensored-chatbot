@@ -3,7 +3,6 @@ import config
 def select_model_for_specialist(specialist: str, query: str) -> str:
     """Dynamically select the best model for a specialist/task based on the query."""
     query_lower = query.lower()
-    # Example: Use a more unfiltered/creative model for certain topics
     if specialist == "Researcher":
         if any(x in query_lower for x in ["adult", "drug", "nsfw", "uncensored", "controversial"]):
             return "llama3-uncensored:latest"
@@ -17,4 +16,5 @@ def select_model_for_specialist(specialist: str, query: str) -> str:
     elif specialist == "Creative":
         return "phi3:latest"
     else:
+
         return config.MODEL_SYNTHESIZER
