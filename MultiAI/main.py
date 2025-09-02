@@ -75,7 +75,6 @@ class ConversationalAgent:
             plan = []
             if loop_count > 0:
                 yield {"status": f"Attempt {loop_count} failed. Falling back to a smarter plan..."}
-                # --- THE DEFINITIVE FIX: A smarter "Plan B" ---
                 plan = [
                     {"specialist": "Researcher", "query": f"Find information on: {prompt_for_ai}", "tool": "web_search", "tool_query": prompt_for_ai},
                     {"specialist": "Researcher", "query": "Based on the search results, provide a comprehensive answer to the user's original query."}
@@ -157,11 +156,11 @@ def main(run_gui: bool):
             console.print("[bold red]GUI dependencies not installed. Please run 'pip install customtkinter'[/bold red]")
             sys.exit(1)
     else:
-        # This part remains unchanged
         pass
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the MultiAI Chatbot.")
     parser.add_argument("--gui", action="store_true", help="Run the GUI version of the chatbot.")
     args = parser.parse_args()
+
     main(args.gui)
