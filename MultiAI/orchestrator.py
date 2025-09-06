@@ -20,6 +20,10 @@ class Orchestrator:
                 options={"temperature": 0.0, "num_predict": 4096}
             )
             return response.get('response')
+        except ollama.ResponseError as e:
+            self.console.print(f"\n[bold red]Ollama API Error for '{model}': {e.error}[/bold red]")
+            self.console.print("[bold yellow]Is the model pulled and is Ollama running?[/bold yellow]")
+            return f"Error: Could not get a response from the model '{model}'."
         except Exception as e:
             self.console.print(f"\n[bold red]FATAL ERROR calling '{model}': {e}[/bold red]")
             return ""
