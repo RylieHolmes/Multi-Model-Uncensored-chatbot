@@ -8,13 +8,13 @@ The entire system runs 100% locally on your machine using **Ollama**, ensuring c
 
 ### Core Features
 
-*   ** Multi-Agent Architecture:** Utilizes a sophisticated team of AI agents (Orchestrator, Critic, Specialists, Synthesizer) for more robust and accurate problem-solving.
-*   ** Tool-Enabled Agents:** The AI can use tools like `web_search`, `scrape_webpage`, and `execute_python_script` to interact with external information and perform complex tasks.
-*   ** 100% Local and Private:** All models and processing run on your own hardware via Ollama. No data ever leaves your machine. No API keys are needed.
-*   ** Resource Safety Management:** Includes scripts to limit Ollama's CPU and VRAM usage, ensuring your computer remains stable and responsive even under heavy load.
-*   ** Configurable Safety:** Features a `SAFE_MODE` toggle in the configuration, allowing you to switch between a standard helpful prompt and a more direct, unfiltered system prompt.
-*   ** Dual Interface:** Run the chatbot with a polished graphical user interface (GUI) or directly in your command-line interface (CLI).
-*   ** Long-Term Memory:** A simple journaling feature allows the AI to remember key facts and user preferences between conversations.
+*   **Multi-Agent Architecture** Utilizes a sophisticated team of AI agents (Orchestrator, Critic, Specialists, Synthesizer) for more robust and accurate problem-solving.
+*   **Tool-Enabled Agents:** The AI can use tools like `web_search`, `scrape_webpage`, and `execute_python_script` to interact with external information and perform complex tasks.
+*   **100% Local and Private:** All models and processing run on your own hardware via Ollama. No data ever leaves your machine. No API keys are needed.
+*   **Resource Safety Management:** Includes scripts to limit Ollama's CPU and VRAM usage, ensuring your computer remains stable and responsive even under heavy load.
+*   **Configurable Safety:** Features a `SAFE_MODE` toggle in the configuration, allowing you to switch between a standard helpful prompt and a more direct, unfiltered system prompt.
+*   **Dual Interface:** Run the chatbot with a polished graphical user interface (GUI) or directly in your command-line interface (CLI).
+*   **Long-Term Memory:** A simple journaling feature allows the AI to remember key facts and user preferences between conversations.
 
 ### System Architecture
 
