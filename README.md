@@ -101,6 +101,7 @@ Clone this repository to your local machine:
 ```bash
 git clone https://github.com/RylieHolmes/Multi-Model-AI-Chatbot.git
 cd Multi-Model-AI-Chatbot
+```
 
 #### 3. Install Dependencies
 Install all the required Python packages using the `requirements.txt` file.
